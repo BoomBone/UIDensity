@@ -19,18 +19,18 @@ object ViewCalculateUtil {
         leftMargin: Int,
         rightMargin: Int
     ) {
-        val layoutParams = view.layoutParams as LinearLayout.LayoutParams
-        if (width != LinearLayout.LayoutParams.MATCH_PARENT
-            && width != LinearLayout.LayoutParams.WRAP_CONTENT
-            && width != LinearLayout.LayoutParams.FILL_PARENT
+        val layoutParams = view.layoutParams as RelativeLayout.LayoutParams
+        if (width != RelativeLayout.LayoutParams.MATCH_PARENT
+            && width != RelativeLayout.LayoutParams.WRAP_CONTENT
+            && width != RelativeLayout.LayoutParams.FILL_PARENT
         ) {
             layoutParams.width = UIUtils.getInstance().getWidth(width)
         } else {
             layoutParams.width = width
         }
-        if (height != LinearLayout.LayoutParams.MATCH_PARENT
-            && height != LinearLayout.LayoutParams.WRAP_CONTENT
-            && height != LinearLayout.LayoutParams.FILL_PARENT
+        if (height != RelativeLayout.LayoutParams.MATCH_PARENT
+            && height != RelativeLayout.LayoutParams.WRAP_CONTENT
+            && height != RelativeLayout.LayoutParams.FILL_PARENT
         ) {
             layoutParams.height = UIUtils.getInstance().getWidth(height)
         } else {
